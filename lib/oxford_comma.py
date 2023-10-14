@@ -1,8 +1,15 @@
 def oxford_comma(items):
-    if len(listed) == 0:
-        return ''
-    if len(listed) == 1:
-        return listed[0]
-    if len(listed) == 2:
-        return listed[0] + ' and ' + listed[1]
-    return ', '.join(listed[:-1]) + ', and ' + listed[-1]
+    string = []
+    for item in items:
+        if len(items) == 1:
+            return str(item)
+        elif len(items) == 2:
+            return'and '.join(items)
+        else:
+            if item!= items[-1]:
+                string.append(item)
+            else:
+                string.append(f'and {item}')
+                return str(', '.join(string))
+
+
