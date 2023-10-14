@@ -1,9 +1,8 @@
 def oxford_comma(items):
-    def oxford_comma(items):
-        if len(items) == 1:
-            return items [0]
-        elif len (items)==2:
-            return f"{items[0]} and {items[1]}"
-        elif len(items) >= 3:
-            formatted_items = ", ".join(items[:-1])
-            return f"{formatted_items}, and {items[-1]}"
+    if len(listed) == 0:
+        return ''
+    if len(listed) == 1:
+        return listed[0]
+    if len(listed) == 2:
+        return listed[0] + ' and ' + listed[1]
+    return ', '.join(listed[:-1]) + ', and ' + listed[-1]
