@@ -1,6 +1,6 @@
 def oxford_comma(items):
     def oxford_comma(items):
-        if lens(items) == 1:
+        if len(items) == 1:
             return items [0]
         elif len (items)==2:
             return f"{items[0]} and {items[1]}"
